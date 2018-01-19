@@ -49,4 +49,11 @@ public void Radio(){
       estado = false;
     return false;
   }
+  
+  public String cambioFrecuencia(){
+      amfm = !amfm;
+      if(amfm){
+          return("AM");
+      } else return ("FM");
+  }
 }
