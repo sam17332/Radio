@@ -1,3 +1,13 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author USUARIO
+ */
 public class Radio implements RadioI {
 
 private double frecActual;
@@ -7,7 +17,9 @@ private boolean estado;
 private boolean amfm; //true es am, false es fm
 
 public void Radio(){
-
+amfm = false;
+estado = false;
+frecActual = 87.9;
 }
 
   public String frecAdelante(){
@@ -42,6 +54,8 @@ public void Radio(){
   
   public boolean prender(){
       estado = true;
+      amfm = true;
+      frecActual = 530;
     return true;
   }
             
@@ -52,8 +66,12 @@ public void Radio(){
   
   public String cambioFrecuencia(){
       amfm = !amfm;
-      if(amfm){
+      if(amfm == true){
+          frecActual = 530.0;
           return("AM");
-      } else return ("FM");
+      } else {
+          frecActual = 87.9;
+          return ("FM");
+      }
   }
 }
