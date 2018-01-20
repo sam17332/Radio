@@ -8,6 +8,13 @@
  *
  * @author USUARIO
  */
+
+/**
+ * @author Rodrigo Samayoa 17332
+ * @author Miguel Valle 17102
+ * @version 19.01.2018
+ * Interfaz 
+ */
 public interface RadioI {
   public String frecAdelante(); //avanza en la frecuencia actual
   public String frecAtras(); //retrocede en la frecuencia actual

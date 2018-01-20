@@ -8,6 +8,13 @@
  *
  * @author USUARIO
  */
+
+/**
+ * @author Rodrigo Samayoa 17332
+ * @author Miguel Valle 17102
+ * @version 19.01.2018
+ * Clase de interfaz gráfica que imita un radio
+ */
 public class GUIRadio extends javax.swing.JFrame {
 
     /**
